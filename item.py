@@ -14,7 +14,7 @@ class Item:
         
         #Assign
         self.__name = name
-        self.price = price
+        self.__price = price
         self.quantity = quantity
         
         #actions to excecute
@@ -25,15 +25,23 @@ class Item:
     def name(self):
         return self.__name
     
+    @property
+    def price(self):
+        return self.__price
+    
+    def apply_disc(self):
+        self.__price = self.__price * self.pay_rate
+        
+    def apply_increment(self, incre_num:float):
+        self.__price = self.__price + self.__price * incre_num
+    
     @name.setter
     def name(self, value):
         self.__name = value
         
     def calculate(self):
-        return self.quantity * self.price
+        return self.quantity * self.__price
     
-    def apply_disc(self):
-        self.price = self.price * self.pay_rate
     
     @classmethod   
     def instantiate_from_csv(cls):

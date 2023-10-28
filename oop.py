@@ -47,8 +47,13 @@ phone2 = Phone("iphonev13", 45, 60,3)
 
 #print(Item.all)
 
-#Encapsulation
+#Encapsulation restricting direct access to some of our attributes in the program
 item1 = Item("MyItem", 750)
-print(item1.name)
-item1.name = "Second"
-print(item1.name)
+print(item1.price)
+# item1.price = -80
+# 
+
+item1.apply_increment(0.2)
+print(item1.price)
+item1.apply_disc()
+print(item1.price)
