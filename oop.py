@@ -1,5 +1,6 @@
 from item import Item
 from phone import Phone
+from poly_M import Keyboard
 
 
 '''item1 = Item("Phone",400,20)
@@ -59,4 +60,11 @@ item1.apply_disc()
 print(item1.price)
 
 #abstraction is to hide unnecessary information from the instance
-item1.__connect
+item1.__connect()
+
+#Inheritancce is reusing the code accross all the classess
+
+#Polymorphism is refers to use of a single type entity to reprenent a different type to adifferent scinario
+
+item1 = Keyboard("MyItem", 750)
+print(item1.price)
