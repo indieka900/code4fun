@@ -57,3 +57,6 @@ item1.apply_increment(0.2)
 print(item1.price)
 item1.apply_disc()
 print(item1.price)
+
+#abstraction is to hide unnecessary information from the instance
+item1.__connect
