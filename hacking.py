@@ -1,0 +1,12 @@
+import time
+print("Hacking Safaricom 0%")
+time.sleep(3)
+print("Hacking Safaricom 20%")
+time.sleep(3)
+print("Hacking Safaricom 40%")
+time.sleep(3)
+print("Hacking Safaricom 60%")
+time.sleep(3)
+print("Hacking Safaricom 80%")
+time.sleep(3)
+print("Hacking Safaricom 100%")
