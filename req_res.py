@@ -12,6 +12,6 @@ def send_req(username, displayName):
     else:
         print(f"The request was not sent")
         
-send_req("Joseph In","JJ123")
-send_req("Joseph Ali","J254")
-send_req("Joseph Amos","Amo_J")
+res = requests.get("https://api.github.com")
+#print(res)
+print(res.text)
