@@ -14,7 +14,6 @@ int stringLength(String name) => name.length;
 bool checkeven(int num) => num % 2 == 0 ? true : false;
 
 void main() {
-  print("Hello");
   var sum = addNum(12, 45);
   print(sum);
   print(multi(c: 2, a: 14));
