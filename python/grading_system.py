@@ -1,3 +1,4 @@
+from modules import testing
 def addMarks():
     subjects = {}
     total_marks = 0
@@ -27,9 +28,10 @@ def addMarks():
 
         
     average = total_marks / len(subjects)
-    # if A, B, C
+    _grade = testing.grade(int(average))
     subjects["Total marks"] = total_marks
     subjects["Average"] = int(average)
+    subjects["Grade"] = _grade
     # subjects["Grade"] = grade
 
     print(subjects)
