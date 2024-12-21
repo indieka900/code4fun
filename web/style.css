@@ -1,0 +1,10 @@
+table, h6 {
+    font-size: 25px;
+    color: blue;
+    font-style: italic;
+}
+
+thead {
+    background-color: green;
+    border: none;
+}
